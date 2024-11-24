@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #201B2C 10%, #201B2C 30%, #08C671 50%);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.icon-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #08C671;
+}
+
+.icon {
+    color: #201B2C;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Animação de aumento ao passar o mouse */
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* Animação de clique (efeito de diminuição) */
+.icon:active {
+    transform: scale(0.9); /* Efeito de diminuição ao clicar */
+}

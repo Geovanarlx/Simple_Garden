@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Aplica a fonte Poppins a todos os elementos */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    background: linear-gradient(180deg, #08C671 10%, #08C671 30%, #201B2C 50%);
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Container principal que alinha itens verticalmente e centraliza */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: #FFFFFF;
+}
+
+/* Estilo da imagem grande adaptado dos retângulos */
+.header-img {
+    position: relative;
+    
+}
+
+.header-img img {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    object-fit: cover;
+    background-color: #2C2C4E;
+    border: 3px solid #02F68A;
+    border-radius: 38px;
+    box-shadow: 0 0 10px #00FF91;
+    margin: 0;
+    display: block;
+    margin-bottom: -10px;
+}
+
+main {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.0rem;
+    margin-top: 1.5rem;
+}
+
+.option-wrapper {
+    text-align: center;
+}
+
+/* Estilo dos quadrados adaptado dos retângulos do primeiro código */
+.option {
+    background-color: #2C2C4E;
+   border: 3px solid #00FF88;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s;
+    box-shadow:  #00FF91;
+}
+
+.option img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.option-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #D3D3E7;
+    background-color: #7a7a7a;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.option.selected {
+    border-color: #FFFFFF;
+}
+
+.icon-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #201B2C;
+}
+
+.icon {
+    color: #00FF88; /* Cor verde */
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}

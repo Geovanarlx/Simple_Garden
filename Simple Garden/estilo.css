@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Aplica a fonte Poppins a todos os elementos */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    background: linear-gradient(180deg, #08C671 10%, #08C671 30%, #201B2C 50%);
+    margin: 0;
+    min-height: 100vh;
+    color: #FFFFFF; /* Define o texto padrão como branco */
+}
+
+/* Container principal que alinha itens verticalmente e centraliza */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #006D41;
+    width: 100%;
+    padding: 1rem; /* Aumenta o padding para mais espaçamento */
+    text-align: left;
+    position: relative;
+}
+
+/* Estilo do título */
+header h1 {
+    font-size: 1.5rem;
+    margin: 2rem 1rem 1rem 1rem; /* Aumenta a margem superior */
+    color: #FFFFFF;
+    /* Removido o fundo, o padding e a sombra do título */
+}
+
+/* Estilo da seta de voltar */
+.back-arrow {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: #201B2C;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.back-arrow:hover {
+    transform: scale(1.2);
+}
+
+/* Estilo da imagem de cabeçalho */
+.header-img {
+    margin-top: 2rem; /* Adiciona margem no topo da imagem */
+}
+
+.header-img img {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    object-fit: cover;
+    background-color: #2C2C4E;
+    border: 3px solid #02F68A;
+    border-radius: 38px;
+    /* Removido a sombra da imagem */
+    margin: 0;
+    display: block;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+}
+
+section {
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #FFFFFF; /* Define o texto das seções como branco */
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #02F68A;
+    margin-bottom: 0.5rem;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #FFFFFF; /* Define o texto dos parágrafos e listas como branco */
+}
+
+/* Estilo das listas */
+ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+}

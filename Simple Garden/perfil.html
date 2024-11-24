@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Perfil</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Barra de Pesquisa -->
+        <header>
+            <h1>Perfil</h1>
+        </header>
+        
+        <!-- Exibição do perfil -->
+        <main>
+            <div class="profile-card">
+                <h2>Bem-vindo, <span id="username"></span>!</h2>
+                <p>Este é seu perfil.</p>
+            </div>
+        </main>
+        
+        <!-- Rodapé -->
+        <div class="icon-container">
+            <a href="home.html" id="home-icon" class="icon"><i class="fas fa-home"></i></a>
+            <a href="search.html" id="search-icon" class="icon"><i class="fas fa-search"></i></a>
+            <a href="list.html" id="list-icon" class="icon"><i class="fas fa-tasks"></i></a>
+            <a href="favorites.html" id="heart-icon" class="icon"><i class="fas fa-heart"></i></a>
+        </div>
+    </div>
+
+    <script>
+        // Captura o nome do usuário da URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const usuario = urlParams.get('usuario');
+
+        // Se o usuário não estiver logado (sem parâmetro na URL), redireciona para login
+        if (!usuario) {
+            window.location.href = ""; // Redireciona para a página de login
+        } else {
+            // Exibe o nome do usuário no perfil
+            document.getElementById('username').textContent = usuario;
+        }
+    </script>
+</body>
+</html>

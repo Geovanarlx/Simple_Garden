@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Plantio</title>
+    <link rel="stylesheet" href="Style-page.css"> <!-- Link para o CSS dedicado -->
+</head>
+<body>
+    <div class="container">
+        <!-- Barra de Pesquisa -->
+        <header>
+            <div class="search-container">
+                <input type="text" placeholder="O QUE VAMOS PLANTAR HOJE ?" class="search-bar" id="search-input">
+                <span class="search-icon"><i class="fas fa-search"></i></span> <!-- Ícone de lupa -->
+            </div>
+        </header>
+        
+        <!-- Retângulos no meio da página com a classe "option" para serem filtrados -->
+        <main>
+            <div class="rectangle option">
+                <img src="hortaliças.svg" alt="Hortaliças">
+                <p>HORTALIÇAS</p>
+            </div>
+            <div class="rectangle option">
+                <img src="frutas.svg" alt="Frutas">
+                <p>FRUTAS</p>
+            </div>
+            <div class="rectangle option">
+                <img src="leguminosas.svg" alt="Leguminosas">
+                <p>LEGUMINOSAS</p>
+            </div>
+            <div class="rectangle option">
+                <img src="tuberculos.svg" alt="Tubérculos">
+                <p>TUBÉRCULOS</p>
+            </div>
+            <div class="rectangle option">
+                <img src="flores.svg" alt="Flores">
+                <p>Flores</p>
+            </div>
+        </main>
+        
+        <!-- Rodapé -->
+        <div class="icon-container">
+            <a href="home.html" id="home-icon" class="icon"><i class="fas fa-home"></i></a>
+            <a href="search.html" id="search-icon" class="icon"><i class="fas fa-search"></i></a>
+            <a href="list.html" id="list-icon" class="icon"><i class="fas fa-tasks"></i></a>
+            <a href="favorites.html" id="heart-icon" class="icon"><i class="fas fa-heart"></i></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
